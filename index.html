@@ -22,15 +22,27 @@
    
   </head>
   <body>
+  <table id="myTable" class ="table table-striped table-bordered"> 
+	<tr>
+		<th> Men </th>
+		<th> Women/Unspecified </th>
+		<th> White </th>
+		<th> Non-white </th>
+	</tr>
+   </table>
     <!-- You may want to put your title and additional informaiton here -->
+	<h1> Police Shooting in United States </h1>
+	<p> This map is showing the crimes committed in the United States, with each circle representing a different case. There are two different colors of circles
+		to represent if the victim was hit or killed by the crime. Each circle has the option to click for details on the crime, as written in the official report.
+	<a href="http://regressing.deadspin.com/deadspin-police-shooting-database-update-were-still-go-1627414202">Source</a>
+	</p>
     <div class="container">
-      <!-- This is the div that your map will go in.  You'll need to reference its id -->
+       <!-- This is the div that your map will go in.  You'll need to reference its id -->
       <div id="container"></div>
     </div>
-    <script>
-      
-      // This is where you should execute your drawMap function
-      
-    </script>
+    <script>  
+      drawMap();// This is where you should execute your drawMap function
+	  male();
+	</script>
   </body>
 </html>
